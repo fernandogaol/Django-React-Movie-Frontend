@@ -1,11 +1,13 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import HomePage from '../Routes/HomePage';
+import Movies from '../Routes/Movies';
+import SiderDemo from './Layout';
 
 function App() {
   return (
     <div className='App'>
-      <HomePage></HomePage>
+      <SiderDemo>
+      </SiderDemo>
     </div>
   );
 }
