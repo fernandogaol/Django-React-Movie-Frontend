@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './Components/App';
+import App from './Components/App/App';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ApiProvider } from './Context/ApiContext';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <ApiProvider>
+      <App />
+    </ApiProvider>
+  </Router>,
   document.getElementById('root')
 );
